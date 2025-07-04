@@ -49,7 +49,7 @@ MiniQuiz/
        answer VARCHAR(255)
    );
    ```
-4. Update your MySQL credentials if needed in `DBConnection.java`.
+4. Update your MySQL credentials if needed in `database.properties`.
 
 ## How to Run
 
