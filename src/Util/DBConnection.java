@@ -17,7 +17,7 @@ public class DBConnection {
         try (InputStream input = DBConnection.class.getClassLoader().getResourceAsStream("database.properties")) {
             Properties prop = new Properties();
             if (input == null) {
-                System.out.println("❌ Sorry, unable to find db.properties");
+                System.out.println("Sorry, unable to find db.properties");
             }
             prop.load(input);
 
@@ -34,3 +34,4 @@ public class DBConnection {
         return DriverManager.getConnection(URL, USERNAME, PASSWORD);
     }
 }
+
